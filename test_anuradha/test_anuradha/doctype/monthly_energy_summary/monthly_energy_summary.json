@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-11 18:14:41.998997",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "avg_high_kwh",
+  "high_tariff",
+  "column_break_vbij",
+  "last_updated",
+  "avg_low_kwh",
+  "low_tariff"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "avg_low_kwh",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Avg Low KWH",
+   "read_only": 1
+  },
+  {
+   "fieldname": "low_tariff",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Low Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "avg_high_kwh",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Avg High KWH",
+   "read_only": 1
+  },
+  {
+   "fieldname": "high_tariff",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "High Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vbij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_updated",
+   "fieldtype": "Datetime",
+   "label": "Last Updated",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-11 20:09:19.918612",
+ "modified_by": "Administrator",
+ "module": "Test Anuradha",
+ "name": "Monthly Energy Summary",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-11 00:16:48.871287",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sqwo",
+  "customer",
+  "power_kw",
+  "energy_productionkwh",
+  "column_break_lmml",
+  "reading_timestamp",
+  "teriff_type",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sqwo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Power Consumption Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "power_kw",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Power (KW)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "energy_productionkwh",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Energy Production(KWH)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reading_timestamp",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Reading Timestamp",
+   "reqd": 1
+  },
+  {
+   "fieldname": "teriff_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Teriff Type",
+   "options": "\nLow\nHigh",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lmml",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-11 18:51:59.553250",
+ "modified_by": "Administrator",
+ "module": "Test Anuradha",
+ "name": "Power Consumption Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
